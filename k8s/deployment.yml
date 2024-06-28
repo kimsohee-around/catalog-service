@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: catalog-service
-          image: sohkim/catalog-service:0.1
+          image: ghcr.io/kimsohee-around/catalog-service:latest
           imagePullPolicy: IfNotPresent
           lifecycle:
             preStop:

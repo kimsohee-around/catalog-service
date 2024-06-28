@@ -14,7 +14,7 @@ spring:
   lifecycle:
     timeout-per-shutdown-phase: 15s
   config:
-    import: "optional:configserver:"
+    import: "optional:configserver:"  
   cloud:
     config:
       uri: http://localhost:8888
@@ -26,6 +26,8 @@ spring:
         initial-interval: 1000 # 1s
         max-interval: 2000 # 2s
         multiplier: 1.1
+  profiles:
+    default: prod
   datasource:
     username: user
     password: password
